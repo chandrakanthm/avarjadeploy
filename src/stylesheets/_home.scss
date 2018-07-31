@@ -1,0 +1,258 @@
+.home-wrapper {
+  h1 {
+    font-size: 5em;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-weight: 700;
+    font-family: Roboto Slab;
+    margin: 96px 0 8px;
+  }
+  h2 {
+    font-size: 2em;
+    font-weight: 700;
+    margin: 0 0 8px;
+  }
+  h3 {
+    font-size: 1.2em;
+    font-weight: 500;
+    margin: 32px 0 8px;
+  }
+  h4 {
+    font-size: 0.833em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 24px 0 8px;
+    opacity: 1;
+  }
+  h5 {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+    margin: 8px 0;
+  }
+
+  section {
+    padding: 72px 0;
+    position: relative;
+  }
+
+  .btn {
+    background: transparent;
+    font-size: 12px;
+    letter-spacing: 2px;
+    line-height: 44px;
+    border: 2px solid transparent;
+    width: 214px;
+    margin: 56px 0;
+    transition: background 500ms;
+  }
+.label.label-info {
+background-color: #03a9f4;
+}
+#tutorials{
+  background: #000000;
+h1,p,a{
+color:#ffffff;
+}
+.Register{
+background:#000000;
+}
+}
+.label {
+border-radius: 10px;
+padding: 5px 12px;
+text-transform: uppercase;
+font-size: 10px;
+}
+.container{
+  overflow: visible !important;
+}
+ 
+ .profile{
+        text-align: center;
+
+        img{
+            max-width: 160px;
+            margin: -80px auto 0;
+        }
+    }
+    .description{
+        margin: 1.071rem  * 2 auto 0;
+        max-width: 600px;
+    }
+    .profile-tabs{
+        margin-top: 1.071rem  * 4;
+    }
+    .gallery{
+        margin-top: 1.071rem * 3;
+        padding-bottom: 50px;
+
+        img{
+            width: 100%;
+            margin-bottom: 1.071rem  * 2;
+        }
+    }
+
+
+}
+.blockchain{
+  height : 5.8em;
+}
+#banner {
+  background: #242a3e;
+  color: $white;
+  position: relative;
+  @include venderPrefix(user-select, none);
+
+  > .fps > div {
+    position: absolute !important;
+    bottom: 24px !important;
+    right: 10px !important;
+    top: inherit !important;
+    left: inherit !important;
+  }
+  >.hero {
+    position: absolute;
+    top: 0;
+  }
+  > .container {
+    position: relative;
+  }
+
+  p {
+    font-size: 16px;
+    color: $white-40;
+  }
+  .btn {
+    border: solid 2px $primary;
+    @include linearGradientH(border-image, $primary, $secondary);
+    border-image-slice: 2;
+  }
+  .btn:hover {
+    background: rgba(0, 173, 230, 0.3);
+  }
+}
+
+#features {
+  position: relative;
+
+  .texts >div {
+    max-width: 50%;
+    width: 480px;
+  }
+  .image {
+    position: absolute;
+    height: 110%;
+    width: 50%;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    border-top: solid 200px transparent;
+    background-image: url('../static/images/maps.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right top;
+  }
+
+  h2, h3 {
+    color: $black-20;
+    position: relative;
+  }
+  h3 > img {
+    position: absolute;
+    top: -4px;
+    width: 36px;
+    left: -48px;
+  }
+  .buttons {
+    margin-top: 48px;
+
+    .btn .icon {
+      font-size: 20px;
+      margin-left: 4px;
+      opacity: 0.5;
+      vertical-align: middle;
+    }
+    .btn:hover .icon {
+      opacity: 1;
+    }
+  }
+  .btn {
+    border-color: $black;
+    margin: 12px;
+    min-width: 214px;
+    color: $black;
+  }
+  .btn:hover {
+    background: $black;
+    color: $white;
+  }
+}
+#footer {
+  background-image: url('../static/images/footer-pattern.gif');
+  background-size: 32px;
+  background-repeat: repeat;
+  color: $white;
+.pull-left{
+text-align:left !important;
+}
+  .icon-uber-logo {
+    font-size: 24px;
+  }
+
+  h4 {
+    font-size: 12px;
+    margin-bottom: 24px;
+    font-weight: 300;
+  }
+}
+.about{
+  p{
+    color: #000000;
+    opacity: 1;
+    font-weight: normal;
+  }
+}
+.sessions{
+p{
+    color: #000000;
+    opacity: 1;
+    font-weight: normal;
+
+    a{
+      color: #3890e0 !important;
+    opacity: 1;
+    font-weight: bold;
+    }
+  }
+
+
+}
+@media screen and (max-width: 576px) {
+  .home-wrapper {
+    h1 {
+      font-size: 3.6em;
+    }
+    h2 {
+      font-size: 1.6em;
+    }
+  }
+  #banner {
+    p {
+      font-size: 12px;
+    }
+  }
+  #features {
+    .container >div {
+      max-width: 100%;
+      width: 100%;
+    }
+    .image {
+      display: none;
+    }
+    .btn {
+      padding: 0 24px;
+      width: auto;
+    }
+  }
+}
