@@ -15,6 +15,9 @@
     "lint": "eslint src --ignore-pattern workers",
     "heroku-postbuild": "npm install && npm run build"
   },
+    "engines": {
+    "node": "8.9.4"
+  },
   "dependencies": {
     "@fortawesome/fontawesome": "^1.1.8",
     "@fortawesome/react-fontawesome": "0.0.19",
